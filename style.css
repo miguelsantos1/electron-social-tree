@@ -1,5 +1,5 @@
 :root {
-    --body-bg-color: #1c1b22;
+    --body-bg-color: #101013;
     --main-color: #ffffff95;
     /* Poppins syntax: font-family: 'Poppins', sans-serif; */
 }
@@ -9,6 +9,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 1px;
+    background-color: rgb(81, 81, 81);
+  }
 
 body {
     background-color: var(--body-bg-color);
@@ -20,6 +26,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 main {
@@ -80,6 +88,17 @@ main {
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+
+footer {
+    background-color: #212125;
+    width: 100vw;
+    position: absolute;
+    bottom: 5px;
+}
+
+footer p {
+    text-align: center;
 }
 
 @keyframes selector {
