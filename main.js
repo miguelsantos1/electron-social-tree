@@ -29,5 +29,3 @@ function createShortcuts() {
 app.whenReady()
 .then(createWindow)
 .then(createShortcuts)
-
-
