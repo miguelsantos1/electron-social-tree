@@ -7,7 +7,8 @@ const createWindow = () => {
     width: 350,
     height: 600,
     titleBarStyle: 'hidden',
-    alwaysOnTop: true,
+    alwaysOnTop: false,
+    resizable: false,
   })
 
 
