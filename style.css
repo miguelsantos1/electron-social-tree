@@ -1,0 +1,105 @@
+:root {
+    --body-bg-color: #1c1b22;
+    --main-color: #ffffff95;
+    /* Poppins syntax: font-family: 'Poppins', sans-serif; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    animation: opacity .4s reverse;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.person > img {
+    animation: img .5s reverse linear;
+    width: 220px;
+    height: 220px;
+    border-radius: 20rem;
+    outline-offset: 5px;
+    outline: 2px solid var(--main-color);
+}
+
+#arrow {
+    animation: selector 2s reverse linear infinite;
+}
+
+.person p {
+    margin: 15px 0 33px;
+    font-weight: 300;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    animation: links .8s reverse;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    border: 1.6px solid var(--main-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    display: block;
+    margin: 16px 0px;
+    padding: 7px 100px;
+    letter-spacing: 2px;
+    transition: .6s;
+}
+
+.links a:hover {
+    box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.292);
+    transition: .2s;
+}
+
+.links ul li:last-child a {
+    margin-bottom: 2.6rem; 
+}
+
+.social-media ul {
+    animation: otherLinks .8s reverse;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@keyframes selector {
+    0% { transform: translatey(2px); }
+    50% { transform: translatey(7px); }
+    100% { transform: translateY(2px); }   
+}
+@keyframes opacity {
+    to { opacity: 0; transform: translateY(-20px); }
+    from { opacity: 1; transform: translateY(0px);} 
+}
+@keyframes links {
+    to { transform: translatex(-400px);} 
+    from {transform: translate(0px);}
+}
+@keyframes otherLinks {
+    to { transform: translatex(400px);} 
+    from {transform: translate(0px);}
+}
+@keyframes img {
+    to { transform: translatey(-1500);} 
+    from {transform: translate(0px);}
+}
